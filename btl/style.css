@@ -1,0 +1,245 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 70px;
+    background-image: linear-gradient(45deg, rgba(255, 0, 0, 0.479), rgba(0, 0, 255, 0.596));
+}
+
+.name-web {
+    padding-top: 15px;
+    padding-left: 50px;
+}
+.b_link {
+    font-size: 30px;
+    color: aqua;
+    text-shadow: 0 0 7px red, 0 0 7px black;
+}
+
+.header_navbar{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.navbar_list {
+    list-style: none;
+    padding: 25px;
+}
+.navbar_item {
+    display: inline-block;
+}
+.navbar_item_link {
+    color: white;
+}
+.navbar_item:hover {
+    cursor: pointer;
+    color: white;
+}
+.navbar_item_link:hover {
+    cursor: pointer;
+    color: black;
+}
+
+
+form {
+    padding-top: 23px !important;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    float: left;
+    width: 300px;
+    height: 25px;
+}
+
+form.example button {
+    float: left;
+    width: 40px;
+    height: 25px;
+    padding: 5px;
+    background-color: lightgray;
+    color: white;
+    font-size: 13px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+form.example button:hover {
+    background: gray;
+}
+  
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width:850px){
+    form.example input[type=text] {
+        display: none;
+    }
+}
+@media only screen and (max-width:550px){
+    li.navbar_item {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .b_link {
+        font-size: 25px;
+    }
+}
+
+/* .sticky {
+    position: sticky;
+    width: 100%;
+    top: 0;
+} */
+
+
+.navbar {
+    overflow: hidden;
+    background-color: lightgray;
+    padding-left: 250px;
+}
+  
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.home {
+    background-color: white;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+    color: rgb(113, 43, 226);
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    float: left;
+    width: 120px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*@media*/
+
+
+.body{
+    display: block;
+    height: 100%;
+}
+.body1{
+    height: 250px;
+    margin-left: 20%;
+}
+.slide{
+    float: left;
+    height: 200px;
+}
+.body-head{
+    margin-left: -6%;
+    transition: transform 0.5s linear;
+    height: 90px;
+    display: flex;
+}
+.boxleft{
+    float: left;
+    width: 15%;
+    height: 1500px;
+    position: absolute;
+    top: 117px;
+    z-index: 1;
+    background-color: whitesmoke;
+}
+.boxright{
+    float: right;
+    width: 15%;
+    height: 1500px;
+    position: absolute;
+    right: 0px;
+    top: 117px;
+    z-index: 2;
+    background-color: whitesmoke;
+}
+.slide>p{
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 5px;
+    margin-top: 160px;
+    color : #fff;
+    text-align: center;
+    vertical-align: bottom ;
+}
+.body1>h2{
+    color : blueviolet;
+    line-height: 40px;
+}
+.btnleft{
+    position: absolute;
+    top : 240px;
+    margin-left: -4%;
+    z-index: 1;
+    height: 25px;
+    width: 25px;
+}
+.btnright{
+    position: absolute;
+    top : 240px;
+    right: 16%;
+    z-index: 1;
+    height: 25px;
+    width: 25px;
+}
